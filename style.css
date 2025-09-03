@@ -1,4 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+
+body{
+    font-family: "Poppins",sans-serif;
+    background: linear-gradient(135deg, #89f7fe, #66a6ff); 
+    margin:0;
+    padding:0;
+}
 #big-card{
+  background: rgba(255, 255, 255, 0.15); /* glass effect */
   height:600px;
   width:900px;
   gap: 2rem;
@@ -8,9 +18,22 @@
   border:2px solid black;   
   margin: auto;
   margin-top:6rem;
-  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.15);
   background-color: aqua;
 }
+#big-card:hover {
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.5);;
+
+  
+}
+h1 {
+  text-align: center;
+  font-weight: 600;
+  color: #023e8a;
+  
+}
+
+
 /* #city{
     
     display: block;
@@ -28,7 +51,35 @@
 }
 
 
+#search {
+  padding: 10px 20px;
+  background: #0077b6;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+#search:hover {
+  background: #023e8a;
+}
 
+#city {
+  padding: 10px 15px;
+  border: 2px solid #0077b6;
+  border-radius: 8px;
+  outline: none;
+  font-size: 16px;
+  width: 60%;
+}
+/* City display */
+#city-display {
+  font-size: 24px;
+  font-weight: 600;
+  margin-top: 10px;
+  color: #333;
+}
 
 
 #container{
@@ -67,4 +118,12 @@
 .container{
     display: flex;;
     justify-content: space-between;
+}
+
+.info-box {
+  border: 2px solid black;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  margin: 10px;
 }

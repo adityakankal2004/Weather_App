@@ -71,6 +71,15 @@ search.addEventListener("click", async()=>{
     lat_long.style.padding = "30px";
 
 
+    Temp.classList.add("info-box");
+    min_max.classList.add("info-box");
+    humidity.classList.add("info-box");
+    visibility.classList.add("info-box");
+    lat_long.classList.add("info-box");
+    results_2.classList.add("info-box");
+
+
+
     } catch (error){
          city_display.innerHTML = "Invalid City";
     }
